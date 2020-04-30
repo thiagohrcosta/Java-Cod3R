@@ -2,7 +2,7 @@ package br.arrays;
 
 public class ExercicioArrays1 {
 
-    public static double main(String[] args) {
+    public static void main(String[] args) {
 
         double[] notasAlunoA = new double[3];
 
@@ -10,15 +10,23 @@ public class ExercicioArrays1 {
         notasAlunoA[1] = 8;
         notasAlunoA[2] = 6.7;
 
-        double total = 0;
+        double totalAlunoA = 0;
         for(int i = 0; i< notasAlunoA.length; i++){
-            total += notasAlunoA[i];
+            totalAlunoA += notasAlunoA[i];
         }
 
-        double notaMedia = total / notasAlunoA.length;
+        double notaMedia = totalAlunoA / notasAlunoA.length;
 
-        return notaMedia;
+        final double notaArmazenada = 5.9;
 
+        double[] notasAlunoB = {6.9, 8.9, notaArmazenada, 10};
+
+        double totalAlunoB = 0;
+        for (int i = 0; i < notasAlunoB.length; i++){
+            totalAlunoB += notasAlunoB[i];
+        }
+
+        double notaMediaAlunoB = totalAlunoB / notasAlunoB.length;
     }
 
     public static void aprovadoOuReprovado(double notaMedia){
@@ -29,5 +37,6 @@ public class ExercicioArrays1 {
             System.out.print("Reprovado");
         }
     }
+
 
 }
