@@ -13,11 +13,11 @@ public class TestExercicioArrays1 {
         notasAluno1[2] = 6.7;
 
         double total = 0;
-        for(int i = 0; i < 3; i++){
+        for(int i = 0; i < notasAluno1.length; i++){
             total += notasAluno1[i];
         }
 
-        double media = total / 3;
+        double media = total / notasAluno1.length;
 
         assertEquals(7.53, media, 1);
     }

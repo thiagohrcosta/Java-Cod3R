@@ -11,11 +11,11 @@ public class ExercicioArrays1 {
         notasAlunoA[2] = 6.7;
 
         double total = 0;
-        for(int i = 0; i< 3; i++){
+        for(int i = 0; i< notasAlunoA.length; i++){
             total += notasAlunoA[i];
         }
 
-        double notaMedia = total / 3;
+        double notaMedia = total / notasAlunoA.length;
 
         return notaMedia;
 
