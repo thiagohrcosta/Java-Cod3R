@@ -1,5 +1,7 @@
 package br.equals;
 
+import java.util.Date;
+
 public class EqualsHashCode {
 
     public static void main(String[] args) {
@@ -16,8 +18,8 @@ public class EqualsHashCode {
         System.out.println(u1.equals(u2));
         System.out.println(u2.equals(u1));
 
-        System.out.print("==========================");
+        System.out.println("==========================");
 
-        System.out.println();
+        System.out.println(u2.equals(new Date()));
     }
 }
